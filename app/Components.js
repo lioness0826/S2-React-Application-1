@@ -102,6 +102,21 @@ export const Greeting = ({ name }) => {
     );
   };
 
+
+
+export const Code=({code})=>{
+    return(
+        <pre className='code'>
+            <code>{code}</code>
+       </pre>
+    )
+}
+
+export const Header=({head})=>{
+    return(
+        <h2>{head}</h2>
+    )
+}
+
+
 export default Layout;
-
-

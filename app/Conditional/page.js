@@ -2,6 +2,7 @@
 import React from 'react';
 import Layout, { Footer } from '../Components';
 import { ConditionalRendering } from '../Components';
+import { Code } from '../Components';
 import Image from 'next/image';
 
 export default function Conditional(){
@@ -27,9 +28,7 @@ export default function Conditional(){
         <div className="main-page">
             <Layout />
             <ConditionalRendering />
-            <pre className='code'>
-                <code>{code}</code>
-            </pre>
+            <Code code={code} />
             <Image src='/imgs/2.drawio.png' alt="Explanation" width={500} height={250}/>
             <p></p>
             <Footer />

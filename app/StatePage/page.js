@@ -2,9 +2,12 @@
 import React from 'react';
 import Layout, { Footer } from '../Components';
 import { StateDemonstration } from '../Components';
+import { Code } from '../Components';
+import { Header } from '../Components';
 
 
 export default function StatePage(){
+    const head="State Example";
     const codeString=` export const StateDemonstration=()=>{
     const [color,setColor]=useState("rgb(188, 194, 194)");
     
@@ -26,10 +29,8 @@ export default function StatePage(){
     return(
         <div className="main-page">
             <Layout />
-            <h2>State Example</h2>
-            <pre className='code'>
-                <code>{codeString}</code>
-            </pre>
+            <Header head={head} />
+            <Code code={codeString} />
             <StateDemonstration />
             <Footer />
         </div>
